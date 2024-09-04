@@ -24,3 +24,10 @@ Sirve para:
 
 ## Enlaces de interés
 -[Librería de Pydantic](https://docs.pydantic.dev/latest/concepts/models/): Contiene información sobre cómo construir clases.
+
+
+## Estructura de un proyecto
+- Siempre habrá una carpeta llamada`app` con el código.
+- Tendremos `schemas` que servirá para definir las clases de "Pydantic".
+- Luego tendremos `infrastructure` que servirá para tener los modelos de las bases de datos.
+- Por último, los `services` que contiene el código que usa las clases contenidas con antelación. 
