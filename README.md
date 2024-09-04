@@ -14,8 +14,10 @@ Sirve para:
 - Reproducibilidad: Ayuda a garantizar que el entorno de desarrollo sea consistente y reproducible, ya que todos los colaboradores usan las mismas versiones de las bibliotecas.
 
 ## Comandos de Git
-- `git add <FICHERO>`para añadir ficheros de interés`en local.
-- `git commit -m <MENSAJE>` para añadir los cambios a la rama local.
+- `git add <FICHERO>`para añadir ficheros de interés en local. Ej: " git add ./README.md
+"
+- `git commit -m <MENSAJE>` para añadir los cambios a la rama local. Ej: " git commit -m "Add git basic commands to README"
+"
 - `git push` para enviar los cambios al remoto.
 - `git rm -rf --cached .idea/` para eliminar los ficheros de Pycharm, luego ponemos en .gitignore ".idea/"
 
