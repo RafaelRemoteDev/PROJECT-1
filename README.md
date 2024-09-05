@@ -25,6 +25,7 @@ Sirve para:
 ## Enlaces de interés
 -[Librería de Pydantic](https://docs.pydantic.dev/latest/concepts/models/): Contiene información sobre cómo construir clases.
 
+-[User Agents](https://user-agents.net/): Esto le dice al servidor que tu petición viene de un navegador, no de un script automatizado.
 
 ## Estructura de un proyecto
 - Siempre habrá una carpeta llamada`app` con el código.
