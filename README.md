@@ -1,4 +1,19 @@
 # RAE webscrapping
+## Descripción del proyecto
+    Bot de Telegram que, dada una palabra y un comando, busque esa palabra en la RAE. La palabra se descargará en la base de datos local en la primera vez que se haga la consulta. 
+El proyecto consiste en crear:
+- Un backend de Python que nos sirva como API:
+
+    - Un webscrapper en este backend que nos permita obtener las definiciones de la RAE.
+    - La estructura del proyecto estará definida con clases y programación orientada a objetos.
+    - Las librerías principales que se usarán serán `re` , `fastapi`, `pydantic`, `bs4`.
+
+
+- Tener una buena base de datos local con SQLite.
+- Usar PostMan para probar la API.
+- Tener el repositorio en GitHub para poder enseñarlo.
+- Aprender a usar el debugger con PyCharm.
+- Aprender a conectar Telegram con nuestra API.
 
 ## Conceptos
 
@@ -36,3 +51,4 @@ Sirve para:
 - Tendremos `schemas` que servirá para definir las clases de "Pydantic".
 - Luego tendremos `infrastructure` que servirá para tener los modelos de las bases de datos.
 - Por último, los `services` que contiene el código que usa las clases contenidas con antelación. 
+
