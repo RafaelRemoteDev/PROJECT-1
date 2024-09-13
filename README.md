@@ -39,7 +39,7 @@ Sirve para:
 ## Comandos de bash
 - `pip`: Manejador de libreríaas de Python.
 
-- `freeze`: Nos indica los paquetes que tenemos en nuestro virtual environment.
+  - `freeze`: Nos indica los paquetes que tenemos en nuestro virtual environment.
 
 ## Enlaces de interés
 -[Librería de Pydantic](https://docs.pydantic.dev/latest/concepts/models/): Contiene información sobre cómo construir clases.
