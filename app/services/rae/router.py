@@ -1,3 +1,5 @@
+from venv import logger
+
 from fastapi import APIRouter
 from pydantic import BaseModel
 
@@ -11,9 +13,8 @@ rae_router: APIRouter = APIRouter(prefix="/rae", tags=["RAE"])
 def get_word(name: str) -> Word:
     """"
     Get a word of the RAE and return its definitions.
-    :return: The word of its fields
-    :rtype: Word
     """
+    logger.info(f"Received request for word: {name}")
     return fetch_word(name=name)
 
 
