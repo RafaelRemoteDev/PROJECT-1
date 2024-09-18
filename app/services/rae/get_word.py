@@ -7,8 +7,19 @@ from loguru import logger
 from app.schemas.word_model import Word
 
 HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:90.0) Gecko/20100101 Firefox/90.0",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:91.0) Gecko/20100101 Firefox/91.0",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+    "Accept-Language": "es-ES,es;q=0.9",
+    "Referer": "https://www.google.com/",
+    "Connection": "keep-alive",
+    "Upgrade-Insecure-Requests": "1",
+    "DNT": "1",  # Do Not Track
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "none",
+    "Sec-Fetch-User": "?1"
 }
+
 
 def _fetch_word_from_rae(name: str) -> tuple[Response, str]:
     base_url = "https://dle.rae.es/"
@@ -74,6 +85,8 @@ def fetch_word(name: str) -> Word:
     if response is None:
         raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail="Failed to fetch word data.")
     return _parse_response_into_word(response=response, name=name, final_url=final_url)
+
+
 
 
 
