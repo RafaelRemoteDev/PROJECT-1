@@ -44,10 +44,6 @@ def _fetch_word_from_rae(name: str) -> tuple[Response, str]:
 
 
 
-
-
-
-
 def _parse_response_into_word(response: Response, name: str, final_url: str) -> Word:
     status_code = response.status_code
     logger.info(f"The response status code of the word: {name} was {status_code}.")
